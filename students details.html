@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input required type="text" minlength="5" name="username1" maxlength="12" placeholder="Enter your usename1">
+        <br>
+        <input type="text" name="email" placeholder="Enter your email address">
+        <br>
+        <input type="password" pattern="^(?=.*[A-Z](?=.*[a-z])(?=.*[A-ZA-zO-9])(?!.*\s).{8,20}$)" name="password"
+            placeholder="Enter your password"> <br>
+        Gender: <input type="radio" name="gender" value="M"> MALE
+        <input type="radio" name="gender" value="F">FEMALE<br>
+        DOB: <input type="date" name="dob" id=""> <br>
+        Salary: <input min="17000" type="number" max="500000" name="sal"> <br>
+        Check in Time : <input type="time" name="in time"> <br>
+        <textarea name="add" cols="35" rows="4" placeholder="address"></textarea> <br>
+        Department: <select name="dept">
+            <option value="NONE">-----SELECT THE DEPARTMENT------</option>
+            <option value="CS-AI">COMPUTER SCIENCE WITH AI</option>
+            <option value="CS">COMPUTER SCIENCE</option>
+            <option value="MCA">MASTER OF COMPUTER APPLICATIONS </option>
+            <option value="CA">CMPUTER APPLICATIONS</option>
+        </select> <br>
+        Choose Checkbox:<br>
+        <input type="checkbox" name="elective" value="java">Java Programming <br>
+        <input type="checkbox" name="elective" value="python">Python Programming <br>
+        <input type="checkbox" name="elective" value="django">Web Development using django <br>
+        <input type="checkbox" name="elective" value="AI"> Artificial Intelligent <br>
+        <input type="checkbox" name="elective" value="ML"> Machine Learning <br>
+        <input type="submit" value="SAVE ">
+        <input type="reset" value="CLEAR ALL">
+    </form>
+</body>
+
+</html>
